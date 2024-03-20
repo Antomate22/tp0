@@ -1,0 +1,61 @@
+body {
+    background-color: aliceblue;
+}
+
+#banner {
+    height: 300px;
+    width: 100%;
+    background-image: url("imagenes/image1.jpg");
+    background-repeat: no-repeat;
+    font-size: 100px;
+    background-position: center;
+    color: white;
+
+}
+
+main {
+    width: 80%;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    font-family: 'Helvetica Neue', sans-serif;
+    &.logo{
+        height: 30px; width: 100px;
+        background-color: aqua;
+    }
+
+}
+header .logo{
+    height: 30px; width: 100px;
+    background-color: rgb(9, 138, 95);
+}
+
+#descrip {
+    height: 150px;
+    width: 80%;
+    background-color: rgb(107, 31, 31);
+}
+
+#productos {
+    height: 300px;
+    width: 80%;
+    background-color: rgb(107, 87, 87);
+}
+
+#producto {
+    height: 300px;
+    width: 80%;
+    background-color: rgb(105, 105, 105);
+}
+span{
+    font-size: 25px;}
+#contenedor{
+    padding: 5%;
+
+}
+header .botonera{
+    justify-content: flex-end;
+}
