@@ -7,14 +7,33 @@ body {
     width: 100%;
     font-size: 100px;
     background-color: blueviolet;
-    color: rgb(167, 167, 167);
-    background-image: url(imagenes/image1.jpg);
+    color: rgb(255, 255, 255);
+    background-image: url(imagenes/image.gif );
+    object-fit: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
+}
+
+.dflex {
+    display: flex;
+}
+
+.separar {
+    justify-content: space-between;
+}
+
+.columna {
+    flex-direction: column;
 }
 
 main {
     padding: 5%;
     width: 90%;
+}
+
+.h50 {
+    height: 50%;
 }
 
 header {
@@ -28,12 +47,13 @@ header {
 
 
 
+
     & .logo {
-        height: 30px;
-        width: 100px;
-        background-color: rgb(9, 138, 95);
+        height: 40px;
+        width: 100%;
+        background-color: rgba(247, 247, 247, 0.281);
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 
         & span:first-child {
@@ -48,6 +68,7 @@ header {
 
     & .botonera {
         height: 30px;
+        display: flex;
 
         & a {
             text-decoration: none;
@@ -75,8 +96,11 @@ header {
 
 #descrip .titulo {
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+    color: white;
     font-size: 150%;
+    text-shadow: 0px 0px 15px black;
+
 }
 
 #descrip .tex2 {
@@ -106,35 +130,83 @@ header {
     width: 100%;
     display: flex;
 
+    & .bth {
+
+        background-color: rgba(255, 250, 251, 0);
+        border-color: white;
+        font-size: 15px;
+        color: white;
+        border: solid;
+        width: 90%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+    }
+
 }
 
-#productos .obra {
-    background-color: rgba(133, 238, 206, 0.759);
-    height: 100%;
-    padding: 1%;
-    border: solid;
-    border-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+#productos {
+    & .obra {
+        height: 100%;
+        padding: 1%;
+        border: solid;
+        border-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    & .o1{
+        background-color: rgba(236,243,158,255);
+    }
+    & .o2{
+        background-color: rgba(9,95,181,255);
+    }
+    & .o3{
+        background-color:  rgba(58,188,88,255);
+    }
+    & .o4{
+        background-color:  rgba(118,107,203,255);
+    }
+
 }
+#productos h3{
+    font-family:'Arial Narrow Bold', sans-serif;
+    color:white;
+    text-shadow: 0px 0px 15px black;
+}
+
 
 #productos .imageo {
     height: 260px;
-    width: 195px;
+    width: 200px;
     object-fit: cover;
+
+}
+
+#one {
+    background-color: black;
 }
 
 span {
     font-size: 25px;
 }
 
-#contenedor {
-    padding: 5%;
-
-}
 
 header .botonera {
     justify-content: flex-end;
+}
+
+#staff {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+    color: white;
+    font-size: 150%;
+    text-shadow: 0px 0px 15px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
