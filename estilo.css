@@ -13,7 +13,7 @@ body {
     font-size: 100px;
     background-color: blueviolet;
     color: rgb(255, 255, 255);
-    background-image: url(imagenes/image.gif );
+    background-image: url(imagenes/banner.gif );
     object-fit: cover;
     background-size: 100% 100%;
     background-repeat: no-repeat;
