@@ -1,6 +1,7 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 body {
     background-color: aliceblue;
 }
@@ -23,10 +24,11 @@ body {
 .dflex {
     display: flex;
 }
+
 .centrar {
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .separar {
@@ -38,8 +40,8 @@ body {
 }
 
 main {
-    padding: 5%;
-    width: 90%;
+    padding: 10%;
+    width: 100%;
 }
 
 .h50 {
@@ -59,7 +61,7 @@ header {
 
 
     & .logo {
-       
+
         height: 40px;
         width: 100%;
         background-color: rgba(247, 247, 247, 0.281);
@@ -102,26 +104,27 @@ header {
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
-    font-family:georgia;
+    font-family: georgia;
 
+    & .titulo {
+
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+        color: white;
+        font-size: 150%;
+        text-shadow: 0px 0px 15px black;
+
+    }
+
+    & .tex2 {
+        display: flex;
+
+    }
 }
 
-#descrip .titulo {
 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
-    color: white;
-    font-size: 150%;
-    text-shadow: 0px 0px 15px black;
-
-}
-
-#descrip .tex2 {
-    display: flex;
-
-}
 
 .b2 {
-     background-image: url("imagenes/image2.jpg");
+    background-image: url("imagenes/image2.jpg");
     background-size: 100% 100%;
 }
 
@@ -133,11 +136,17 @@ header {
     width: 100%;
 }
 
-#productos {
+
+.contenedor {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    height: 420px;
+}
+
+#productos {
     width: 100%;
     display: flex;
+    justify-content: center;
     font-family: georgia;
 
     & .bth {
@@ -153,54 +162,48 @@ header {
 
 
     }
+    & .bth:hover {
+        background-color: bisque;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    }
 
-}
-
-#productos {
     & .obra {
-        height: 100%;
-        padding: 1%;
+        height: 500px;
+        padding: 2%;
         border: solid;
         border-color: white;
+        border-radius: 15px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-    }
-    & .o1{
-        background-color: rgba(236,243,158,255);
-    }
-    & .o2{
-        background-color: rgba(9,95,181,255);
-    }
-    & .o3{
-        background-color:  rgba(58,188,88,255);
-    }
-    & .o4{
-        background-color:  rgba(118,107,203,255);
+        object-fit: cover;
+        background-color: rgb(228, 228, 215);
     }
 
-}
-#productos h3{
-    font-family:'Arial Narrow Bold', sans-serif;
-    color:white;
-    text-shadow: 0px 0px 15px black;
+  
+    & .imageo {
+        
+        height: 70%;
+        width: 100%;
+
+
+    }
 }
 
 
-#productos .imageo {
-    height: 260px;
-    width: 200px;
-    object-fit: cover;
-
-}
 
 #one {
     background-color: black;
 }
 
 span {
-    font-size: 25px;
+    padding: 2%;
+    font-size: 230%;
+    font-family: Impact;
+    color: black;
+
 }
 
 
@@ -209,39 +212,49 @@ header .botonera {
 }
 
 #staff {
-    
+
     height: 100%;
     width: 100%;
-    & .titulo{
-        display:flex;
-        justify-content:center;
-        background-color: white;
+
+    & .titulo {
+        display: flex;
+        justify-content: center;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
         color: white;
         font-size: 50px;
         text-shadow: 0px 0px 15px black;
     }
 }
+
 #spersonas {
-    display:flex;
-    justify-content:space-between;
-    & .persona{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
+    display: flex;
+    justify-content: space-between;
+
+    & .persona {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-   
-    & .redondear{
-            width:200px;
-            height:200px;
-            border-radius:150px;    
-            img{
-                object-fit:cover;
-                height:100%;
-            }
+
+    & .redondear {
+        width: 200px;
+        height: 200px;
+        border-radius: 150px;
+
+        img {
+            object-fit: cover;
+            height: 100%;
         }
+    }
 }
-footer{
-    font-family:georgia;
-    background-color:gray;
-    ]
+
+footer {
+    font-family: georgia;
+    background-color: gray;
+}
+
+.bth {
+    cursor: pointer;
+
+}
+
