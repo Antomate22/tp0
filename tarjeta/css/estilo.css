@@ -62,7 +62,9 @@ body {
         .descrip-producto {}
 
         .imgcol{
-            background-image: url(./img/producto.webp) ;
+            background-image: url(../img/producto.webp) ;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
             height: 60%;
             width: 100%;
             padding: 10px;
@@ -91,6 +93,9 @@ body {
                 display: grid;
                 place-items: center;
                 background-color: white;
+                & .talles:hover{
+                    transform: scale(1.1);
+                }
             }
         }
 
