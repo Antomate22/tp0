@@ -11,6 +11,9 @@ body {
     display: grid;
     place-items: center;
 }
+.pto14{
+    size: 16pt;
+}
 .verdesito{background-color: #678f7e;}
 .otroverde{background-color: #3ccc54;}
 .unoverde{background-color: #0d3d29;}
